@@ -24,7 +24,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       # Regenerate public/r/*.json from registry.json so the deployed
       # output always matches the committed source.

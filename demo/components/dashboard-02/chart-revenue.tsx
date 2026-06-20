@@ -32,7 +32,7 @@ const chartConfig = {
   },
   target: {
     label: "Target",
-    color: "var(--muted-foreground)",
+    color: "var(--chart-2)",
   },
 } satisfies ChartConfig
 

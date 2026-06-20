@@ -7,6 +7,7 @@ import {
   IconUsers,
 } from "@tabler/icons-react"
 
+import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
 import {
   Card,
@@ -17,6 +18,15 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
+type Accent = "violet" | "blue" | "amber" | "rose"
+
+const accentMap: Record<Accent, { strip: string; icon: string }> = {
+  violet: { strip: "border-t-violet-500", icon: "text-violet-600 dark:text-violet-400" },
+  blue: { strip: "border-t-blue-500", icon: "text-blue-600 dark:text-blue-400" },
+  amber: { strip: "border-t-amber-500", icon: "text-amber-600 dark:text-amber-400" },
+  rose: { strip: "border-t-rose-500", icon: "text-rose-600 dark:text-rose-400" },
+}
+
 interface StatCardProps {
   title: string
   value: string
@@ -24,6 +34,7 @@ interface StatCardProps {
   trend: "up" | "down"
   description: string
   footerText: string
+  accent: Accent
   icon: React.ReactNode
 }
 
@@ -34,25 +45,36 @@ function StatCard({
   trend,
   description,
   footerText,
+  accent,
   icon,
 }: StatCardProps) {
+  const a = accentMap[accent]
   return (
-    <Card className="@container/card">
+    <Card className={cn("@container/card border-t-4", a.strip)}>
       <CardHeader>
         <CardDescription>{title}</CardDescription>
         <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
           {value}
         </CardTitle>
         <CardAction>
-          <Badge variant="outline">
+          <Badge
+            variant="outline"
+            className={cn(
+              "gap-1",
+              trend === "up"
+                ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+                : "border-rose-500/30 bg-rose-500/10 text-rose-600 dark:text-rose-400"
+            )}
+          >
             {trend === "up" ? <IconTrendingUp /> : <IconTrendingDown />}
             {change}
           </Badge>
         </CardAction>
       </CardHeader>
       <CardFooter className="flex-col items-start gap-1.5 text-sm">
-        <div className="line-clamp-1 flex gap-2 font-medium">
-          {footerText} {icon}
+        <div className="line-clamp-1 flex items-center gap-2 font-medium">
+          <span className={cn("[&_svg]:size-4", a.icon)}>{icon}</span>
+          {footerText}
         </div>
         <div className="text-muted-foreground">{description}</div>
       </CardFooter>
@@ -68,7 +90,8 @@ const stats: StatCardProps[] = [
     trend: "up",
     footerText: "Revenue up from last month",
     description: "Based on the last 30 days",
-    icon: <IconCurrencyDollar className="size-4" />,
+    accent: "violet",
+    icon: <IconCurrencyDollar />,
   },
   {
     title: "Active Users",
@@ -77,7 +100,8 @@ const stats: StatCardProps[] = [
     trend: "up",
     footerText: "Strong user growth",
     description: "+573 from last month",
-    icon: <IconUsers className="size-4" />,
+    accent: "blue",
+    icon: <IconUsers />,
   },
   {
     title: "Conversion Rate",
@@ -86,7 +110,8 @@ const stats: StatCardProps[] = [
     trend: "down",
     footerText: "Slightly below target",
     description: "Optimize onboarding flow",
-    icon: <IconArrowUpRight className="size-4" />,
+    accent: "amber",
+    icon: <IconArrowUpRight />,
   },
   {
     title: "Error Rate",
@@ -95,7 +120,8 @@ const stats: StatCardProps[] = [
     trend: "down",
     footerText: "Errors within threshold",
     description: "Monitored over the last 7 days",
-    icon: <IconAlertTriangle className="size-4" />,
+    accent: "rose",
+    icon: <IconAlertTriangle />,
   },
 ]
 

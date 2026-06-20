@@ -1,0 +1,87 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "dashboard-02-registry",
+  "homepage": "https://github.com/annamalai-shan/dashboard-02-registry",
+  "items": [
+    {
+      "name": "dashboard-02",
+      "type": "registry:block",
+      "description": "A SaaS dashboard starter with stat cards, revenue chart, activity feed, and filterable data table.",
+      "dependencies": [
+        "@tabler/icons-react",
+        "@tanstack/react-table",
+        "recharts",
+        "zod"
+      ],
+      "registryDependencies": [
+        "sidebar",
+        "separator",
+        "card",
+        "chart",
+        "badge",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "input",
+        "label",
+        "select",
+        "skeleton",
+        "table",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/dashboard-02/page.tsx",
+          "type": "registry:page",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "path": "registry/dashboard-02/data.json",
+          "type": "registry:file",
+          "target": "app/dashboard/data.json"
+        },
+        {
+          "path": "registry/dashboard-02/components/app-sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/dashboard-02/app-sidebar.tsx"
+        },
+        {
+          "path": "registry/dashboard-02/components/chart-revenue.tsx",
+          "type": "registry:component",
+          "target": "components/dashboard-02/chart-revenue.tsx"
+        },
+        {
+          "path": "registry/dashboard-02/components/data-table.tsx",
+          "type": "registry:component",
+          "target": "components/dashboard-02/data-table.tsx"
+        },
+        {
+          "path": "registry/dashboard-02/components/nav-main.tsx",
+          "type": "registry:component",
+          "target": "components/dashboard-02/nav-main.tsx"
+        },
+        {
+          "path": "registry/dashboard-02/components/nav-user.tsx",
+          "type": "registry:component",
+          "target": "components/dashboard-02/nav-user.tsx"
+        },
+        {
+          "path": "registry/dashboard-02/components/recent-activity.tsx",
+          "type": "registry:component",
+          "target": "components/dashboard-02/recent-activity.tsx"
+        },
+        {
+          "path": "registry/dashboard-02/components/site-header.tsx",
+          "type": "registry:component",
+          "target": "components/dashboard-02/site-header.tsx"
+        },
+        {
+          "path": "registry/dashboard-02/components/stat-cards.tsx",
+          "type": "registry:component",
+          "target": "components/dashboard-02/stat-cards.tsx"
+        }
+      ],
+      "categories": ["dashboard"]
+    }
+  ]
+}

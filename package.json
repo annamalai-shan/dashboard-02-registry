@@ -1,0 +1,13 @@
+{
+  "name": "dashboard-02-registry",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A standalone shadcn registry distributing the dashboard-02 SaaS dashboard block.",
+  "scripts": {
+    "registry:build": "shadcn build",
+    "preview": "shadcn build && npx serve public"
+  },
+  "devDependencies": {
+    "shadcn": "latest"
+  }
+}

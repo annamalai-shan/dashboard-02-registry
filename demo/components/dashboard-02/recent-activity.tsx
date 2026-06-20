@@ -73,15 +73,18 @@ const activities: ActivityItem[] = [
 
 export function RecentActivity() {
   return (
-    <Card>
+    <Card className="h-full transition-shadow hover:shadow-md">
       <CardHeader>
         <CardTitle>Recent Activity</CardTitle>
         <CardDescription>Latest events across your platform</CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="space-y-4">
+        <div className="space-y-1">
           {activities.map((activity) => (
-            <div key={activity.id} className="flex items-start gap-3">
+            <div
+              key={activity.id}
+              className="-mx-2 flex items-start gap-3 rounded-lg p-2 transition-colors hover:bg-muted/60"
+            >
               <Avatar className="size-8">
                 {activity.user.avatar && (
                   <AvatarImage
@@ -89,7 +92,7 @@ export function RecentActivity() {
                     alt={activity.user.name}
                   />
                 )}
-                <AvatarFallback className="text-xs">
+                <AvatarFallback className="bg-primary/10 text-xs font-medium text-primary">
                   {activity.user.name
                     .split(" ")
                     .map((n) => n[0])
@@ -105,7 +108,9 @@ export function RecentActivity() {
                   <span className="font-medium">{activity.target}</span>
                 </p>
                 <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                  {activity.icon}
+                  <span className="flex size-5 items-center justify-center rounded-md bg-muted">
+                    {activity.icon}
+                  </span>
                   <span>{activity.time}</span>
                 </div>
               </div>

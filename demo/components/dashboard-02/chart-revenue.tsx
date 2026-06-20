@@ -38,13 +38,13 @@ const chartConfig = {
 
 export function ChartRevenue() {
   return (
-    <Card>
+    <Card className="h-full transition-shadow hover:shadow-md">
       <CardHeader>
         <CardTitle>Monthly Recurring Revenue</CardTitle>
         <CardDescription>Last 6 months vs target</CardDescription>
       </CardHeader>
       <CardContent>
-        <ChartContainer config={chartConfig} className="h-48 w-full">
+        <ChartContainer config={chartConfig} className="h-64 w-full">
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis

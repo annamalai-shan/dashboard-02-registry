@@ -1,0 +1,184 @@
+{
+  "tableData": [
+  {
+    "id": 1,
+    "name": "Olivia Martin",
+    "email": "olivia@example.com",
+    "plan": "Pro",
+    "status": "Active",
+    "revenue": "$1,299.00",
+    "joinDate": "2024-01-15"
+  },
+  {
+    "id": 2,
+    "name": "Jackson Lee",
+    "email": "jackson@example.com",
+    "plan": "Enterprise",
+    "status": "Active",
+    "revenue": "$3,499.00",
+    "joinDate": "2024-02-20"
+  },
+  {
+    "id": 3,
+    "name": "Isabella Nguyen",
+    "email": "isabella@example.com",
+    "plan": "Free",
+    "status": "Inactive",
+    "revenue": "$0.00",
+    "joinDate": "2024-03-10"
+  },
+  {
+    "id": 4,
+    "name": "William Kim",
+    "email": "will@example.com",
+    "plan": "Pro",
+    "status": "Active",
+    "revenue": "$1,299.00",
+    "joinDate": "2024-03-22"
+  },
+  {
+    "id": 5,
+    "name": "Sofia Davis",
+    "email": "sofia@example.com",
+    "plan": "Enterprise",
+    "status": "Active",
+    "revenue": "$3,499.00",
+    "joinDate": "2024-04-05"
+  },
+  {
+    "id": 6,
+    "name": "Liam Johnson",
+    "email": "liam@example.com",
+    "plan": "Pro",
+    "status": "Active",
+    "revenue": "$1,299.00",
+    "joinDate": "2024-04-18"
+  },
+  {
+    "id": 7,
+    "name": "Emma Wilson",
+    "email": "emma@example.com",
+    "plan": "Free",
+    "status": "Active",
+    "revenue": "$0.00",
+    "joinDate": "2024-05-01"
+  },
+  {
+    "id": 8,
+    "name": "Noah Brown",
+    "email": "noah@example.com",
+    "plan": "Pro",
+    "status": "Inactive",
+    "revenue": "$1,299.00",
+    "joinDate": "2024-05-14"
+  },
+  {
+    "id": 9,
+    "name": "Ava Taylor",
+    "email": "ava@example.com",
+    "plan": "Enterprise",
+    "status": "Active",
+    "revenue": "$3,499.00",
+    "joinDate": "2024-06-02"
+  },
+  {
+    "id": 10,
+    "name": "Mason Anderson",
+    "email": "mason@example.com",
+    "plan": "Pro",
+    "status": "Active",
+    "revenue": "$1,299.00",
+    "joinDate": "2024-06-15"
+  },
+  {
+    "id": 11,
+    "name": "Mia Thomas",
+    "email": "mia@example.com",
+    "plan": "Free",
+    "status": "Active",
+    "revenue": "$0.00",
+    "joinDate": "2024-07-01"
+  },
+  {
+    "id": 12,
+    "name": "Ethan Harris",
+    "email": "ethan@example.com",
+    "plan": "Enterprise",
+    "status": "Active",
+    "revenue": "$3,499.00",
+    "joinDate": "2024-07-20"
+  },
+  {
+    "id": 13,
+    "name": "Charlotte Clark",
+    "email": "charlotte@example.com",
+    "plan": "Pro",
+    "status": "Active",
+    "revenue": "$1,299.00",
+    "joinDate": "2024-08-05"
+  },
+  {
+    "id": 14,
+    "name": "Alexander Lewis",
+    "email": "alexander@example.com",
+    "plan": "Pro",
+    "status": "Inactive",
+    "revenue": "$1,299.00",
+    "joinDate": "2024-08-18"
+  },
+  {
+    "id": 15,
+    "name": "Amelia Walker",
+    "email": "amelia@example.com",
+    "plan": "Free",
+    "status": "Active",
+    "revenue": "$0.00",
+    "joinDate": "2024-09-01"
+  },
+  {
+    "id": 16,
+    "name": "Benjamin Hall",
+    "email": "benjamin@example.com",
+    "plan": "Enterprise",
+    "status": "Active",
+    "revenue": "$3,499.00",
+    "joinDate": "2024-09-12"
+  },
+  {
+    "id": 17,
+    "name": "Harper Young",
+    "email": "harper@example.com",
+    "plan": "Pro",
+    "status": "Active",
+    "revenue": "$1,299.00",
+    "joinDate": "2024-10-03"
+  },
+  {
+    "id": 18,
+    "name": "Daniel King",
+    "email": "daniel@example.com",
+    "plan": "Pro",
+    "status": "Active",
+    "revenue": "$1,299.00",
+    "joinDate": "2024-10-20"
+  },
+  {
+    "id": 19,
+    "name": "Evelyn Wright",
+    "email": "evelyn@example.com",
+    "plan": "Free",
+    "status": "Inactive",
+    "revenue": "$0.00",
+    "joinDate": "2024-11-05"
+  },
+  {
+    "id": 20,
+    "name": "Henry Scott",
+    "email": "henry@example.com",
+    "plan": "Enterprise",
+    "status": "Active",
+    "revenue": "$3,499.00",
+    "joinDate": "2024-11-18"
+  }
+]
+}

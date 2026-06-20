@@ -31,6 +31,20 @@ jobs:
       - name: Build registry
         run: npx --yes shadcn@latest build
 
+      # Build the live demo app and static-export it.
+      - name: Build demo app
+        working-directory: demo
+        run: |
+          npm ci
+          npm run build
+
+      # Place the exported demo under public/demo so it serves at
+      # <pages-root>/demo/ (matching the app's basePath).
+      - name: Assemble demo into Pages output
+        run: |
+          mkdir -p public/demo
+          cp -r demo/out/. public/demo/
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
